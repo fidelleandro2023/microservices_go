@@ -1,0 +1,9 @@
+#######comandos go##########
+go mod init app
+#####Instalanddo paquetes#######
+---Instalando mysql package -----
+go get github.com/go-sql-driver/mysql
+##########Uso para el docker###################
+docker build --tag goservice .
+docker-compose start
+docker run -it --rm -p 8082:8081 --name reservasservice goservice
